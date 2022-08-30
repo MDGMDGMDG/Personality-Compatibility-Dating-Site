@@ -1,0 +1,329 @@
+* {
+  font-family: Calibri, Arial;
+}
+/*
+body {
+    margin: 5%;
+} */
+
+.pagetitle {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.leadbanner {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'review1 review2'
+    'review3 review4';
+  gap: 10px;
+}
+
+.grid-item {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  align-items: center;
+}
+
+.grid-item-review1 {
+  grid-area: review1;
+}
+.grid-item-review2 {
+  grid-area: review2;
+}
+.grid-item-review3 {
+  grid-area: review3;
+}
+.grid-item-review4 {
+  grid-area: review4;
+}
+
+.grid-item:hover {
+  box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
+}
+
+.avatar:hover {
+  box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
+}
+
+.avatar {
+  height: 80px;
+  border-radius: 50%;
+  margin: 15px 15px 0px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+p {
+  margin: 15px;
+}
+
+p.italic {
+  font-style: italic; 
+}
+
+label.bold {
+  font-weight: bold;
+}
+
+.reviewcontainer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 5px;
+}
+
+.portrait {
+  grid-column: 1;
+}
+
+.name {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+}
+
+.rating {
+  grid-column: 3;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.checked {
+  color: orange;
+}
+
+.unchecked {
+  color: lightgray;
+}
+
+button {
+  background-color: #4466CD;
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+div.center {
+  text-align: center;
+}
+
+div.margin5 {
+  margin: 5px;
+}
+
+div.margin10 {
+  margin: 10px;
+}
+
+div.margin15 {
+  margin: 15px;
+}
+
+div.margin20 {
+  margin: 20px;
+}
+
+button:hover {
+  background-color: #000058;
+  font-size: 200%;
+  box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
+}
+
+.dark-background {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 5;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 350px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+.form-container input, textarea{
+  font-family: Calibri;
+  font-size: 18;
+  width: 95%;
+  padding: 15px 0 15px 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+textarea::placeholder {
+  font-family: Calibri;
+  font-size: 18;
+}
+
+.form-container .btn {
+  background-color: #04AA6D;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: #dc143c;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* Voor kleine schermen de reviews onder elkaar plaatsen in grid */
+@media (max-width: 624px) { 
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+        'review1'
+        'review2'
+        'review3' 
+        'review4';
+    gap: 10px;
+  }
+  .form-container {
+    max-width: 250px;
+    padding: 10px;
+    background-color: white;
+  }
+}
+
+.review {
+  resize: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #e6e6fa;
+}
+
+.active {
+  background-color: #e6e6fa;
+  color: black;
+  font-weight:bold;
+}
+
+.social-icon {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+}
+
+.grid-column-center {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.footer-about{
+  padding-top: 10px;
+  padding-right: 10px;
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+  margin: 20px 0px;
+}
+
+.footer-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.footer-column-2 {
+  max-width: 360px;
+}
+
