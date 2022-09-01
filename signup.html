@@ -30,7 +30,7 @@
 
     <div class="form-popup signup-form" id="reviewForm">
       <form class="form-container" id="formContent">
-        <h1>Sign up</h1>
+        <h1>Tell us about yourself</h1>
 
         <label for="name"><b>Name</b></label>
         <input type="text" placeholder="Enter Name" name="name" required>
@@ -58,18 +58,18 @@
           </div>
           <div>
             <label for="other"><b>Other</b></label>
-            <input type="radio" id="other" name="gender" value="other">
+            <input type="radio" id="other" name="gender" value="other" required>
           </div>
         </div>
         <div style="display:flex; justify-content:start;">
           <div>
             <label for="agree"><b>Agree to terms</b></label>
-            <input type="checkbox" name="agree" class="larger">
+            <input type="checkbox" name="agree" class="larger" required>
           </div>
         </div>
 
         <div class="center margin20">
-          <button type="submit">Send</button>
+          <button type="submit" style="width:80%;">Join</button>
         </div>
       </form>
     </div>
