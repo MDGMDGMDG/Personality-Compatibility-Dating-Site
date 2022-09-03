@@ -7,7 +7,7 @@
   <title>LOVESHIP</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" href="images/heart.png">
+  <link rel="icon" href="images/hearticon.png">
 </head>
 
 <body>
@@ -47,26 +47,50 @@
         <label for="password"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="password" required>
 
+        <label for="selectInterest"><b>Gender</b></label>
+        <select name="selectInterest">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+
         <div style="display:flex; justify-content:start;">
           <div>
-            <label for="male"><b>Male</b></label>
-            <input type="radio" id="male" name="gender" value="male">
+            <label for="beer"><b>Beer</b></label>
+            <input type="radio" id="beer" name="drink" value="beer">
           </div>
           <div>
-            <label for="female"><b>Female</b></label>
-            <input type="radio" id="female" name="gender" value="female">
+            <label for="wine"><b>Wine</b></label>
+            <input type="radio" id="wine" name="drink" value="wine">
+          </div>
+          <div>
+            <label for="cocktails"><b>Cocktails</b></label>
+            <input type="radio" id="cocktails" name="drink" value="cocktails">
+          </div>
+          <div>
+            <label for="mocktails"><b>Mocktails</b></label>
+            <input type="radio" id="mocktails" name="drink" value="mocktails">
           </div>
           <div>
             <label for="other"><b>Other</b></label>
-            <input type="radio" id="other" name="gender" value="other" required>
+            <input type="radio" id="other" name="drink" value="other">
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:start;">
+          <div>
+            <label style="display:inline-block;min-width:60px;" for="male"><b>Male</b></label>
+            <input style="display:inline;" type="checkbox" name="male" class="larger">
           </div>
         </div>
         <div style="display:flex; justify-content:start;">
           <div>
-            <label for="agree"><b>Agree to terms</b></label>
-            <input type="checkbox" name="agree" class="larger" required>
+            <label style="display:inline-block;min-width:60px;" for="female"><b>Female</b></label>
+            <input style="display:inline;" type="checkbox" name="female" class="larger">
           </div>
         </div>
+
+
 
         <div class="center margin20">
           <button type="submit" style="width:80%;">Join</button>

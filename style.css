@@ -226,7 +226,7 @@ button:hover {
 }
 
 
-.form-container input, textarea{
+.form-container input, textarea, select{
   font-family: Calibri, Calibri, Arial, Helvetica, sans-serif;
   font-size: 18;
   width: 95%;
