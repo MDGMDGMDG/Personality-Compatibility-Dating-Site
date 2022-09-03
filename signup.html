@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -54,43 +54,45 @@
           <option>Other</option>
         </select>
 
-        <div style="display:flex; justify-content:start;">
+        <label><b> I like to drink</b></label>
+        <div class="flex-selection">
           <div>
-            <label for="beer"><b>Beer</b></label>
+            <label for="beer">Beer</label>
             <input type="radio" id="beer" name="drink" value="beer">
           </div>
           <div>
-            <label for="wine"><b>Wine</b></label>
+            <label for="wine">Wine</label>
             <input type="radio" id="wine" name="drink" value="wine">
           </div>
           <div>
-            <label for="cocktails"><b>Cocktails</b></label>
+            <label for="cocktails">Cocktails</label>
             <input type="radio" id="cocktails" name="drink" value="cocktails">
           </div>
           <div>
-            <label for="mocktails"><b>Mocktails</b></label>
+            <label for="mocktails">Mocktails</label>
             <input type="radio" id="mocktails" name="drink" value="mocktails">
           </div>
           <div>
-            <label for="other"><b>Other</b></label>
+            <label for="other">Other</label>
             <input type="radio" id="other" name="drink" value="other">
           </div>
         </div>
 
-        <div style="display:flex; justify-content:start;">
+        <label><b>Interested in</b></label>
+        <div class="flex-selection">
           <div>
-            <label style="display:inline-block;min-width:60px;" for="male"><b>Male</b></label>
-            <input style="display:inline;" type="checkbox" name="male" class="larger">
+            <label class="label-inline-block" for="male">Male</label>
+            <input type="checkbox" name="male" value="male">
+          </div>
+          <div>
+            <label class="label-inline-block" for="female">Female</label>
+            <input type="checkbox" name="female" value="female">
+          </div>
+          <div>
+            <label class="label-inline-block" for="other">Other</label>
+            <input type="checkbox" name="other" value="other">
           </div>
         </div>
-        <div style="display:flex; justify-content:start;">
-          <div>
-            <label style="display:inline-block;min-width:60px;" for="female"><b>Female</b></label>
-            <input style="display:inline;" type="checkbox" name="female" class="larger">
-          </div>
-        </div>
-
-
 
         <div class="center margin20">
           <button type="submit" style="width:80%;">Join</button>

@@ -240,6 +240,27 @@ input::placeholder {
   text-align: left;
 }
 
+.label-inline-block {
+  display: inline-block;
+}
+
+input[type=checkbox], input[type=radio] {
+  display: block;
+  width: 25px;
+  height: 25px;
+  transition: 0.3s;
+}
+
+input[type=checkbox]:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transform: scale(1.1);
+}
+
+/* no shadow because of unremovable white square background*/
+input[type=radio]:hover {
+  transform: scale(1.1);
+}
+
 textarea::placeholder {
   font-family: Calibri, Calibri, Arial, Helvetica, sans-serif;
   font-size: 18;
@@ -464,8 +485,9 @@ li a:hover:not(.active) {
   box-shadow: 0 0px 3px 0 rgba(0,0,0,0.2);
 }
 
-.larger {
-  width: 30px;
-  height: 30px;
-  display: block;
+.flex-selection {
+  display:flex; 
+  justify-content:start; 
+  gap:15px; 
+  flex-wrap:wrap;
 }
