@@ -20,16 +20,13 @@
         <li><a id="signup" class="navitem" href="signup.html">SignUp</a></li>
       </ul>
     </nav>
+    <p id="pageTitle" class="pagetitle">Sign Up</p>
+    <p class="leadbanner">Join Loveship Today</p>
   </header>
 
   <main>
-    <div>
-      <p id="pageTitle" class="pagetitle">Sign Up</p>
-      <p class="leadbanner">Join Loveship Today</p>
-    </div>
-
     <div class="form-popup signup-form" id="reviewForm">
-      <form class="form-container" id="formContent">
+      <form class="form-container signup-container" id="formContent">
         <h1>Tell us about yourself</h1>
 
         <label for="name"><b>Name</b></label>
@@ -54,7 +51,7 @@
           <option>Other</option>
         </select>
 
-        <label><b> I like to drink</b></label>
+        <label class="block"><b> I drink</b></label>
         <div class="flex-selection">
           <div>
             <label for="beer">Beer</label>
@@ -71,10 +68,6 @@
           <div>
             <label for="mocktails">Mocktails</label>
             <input type="radio" id="mocktails" name="drink" value="mocktails">
-          </div>
-          <div>
-            <label for="other">Other</label>
-            <input type="radio" id="other" name="drink" value="other">
           </div>
         </div>
 
@@ -95,7 +88,7 @@
         </div>
 
         <div class="center margin20">
-          <button type="submit" style="width:80%;">Join</button>
+          <button type="submit" class="large">Join</button>
         </div>
       </form>
     </div>

@@ -1,16 +1,25 @@
 /* prefer Calibri with fall back fonts */
-* {
+/* * {
   font-family: Calibri, Arial, Helvetica, sans-serif;
-}
+} */
 
 body {
-  background-color: #FCF9FF;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+  background-color: #f9f7ff;
+}
+
+header {
+  background-color: #f1f1fb;
+  padding-bottom: 5px;
+  color: #F6F0FA;
+  width: 100%;
 }
 
 .pagetitle {
   text-align: center;
   font-size: 30px;
   text-transform: uppercase;
+  color: #1E1433;
 }
 
 .leadbanner {
@@ -19,6 +28,7 @@ body {
   text-align: center;
   font-size: 50px;
   padding: 10px;
+  margin-bottom: 50px;
 }
 
 .grid-2column {
@@ -116,6 +126,10 @@ body {
   transition: 0.3s;
 }
 
+.background-white {
+  background-color: white;
+}
+
 p {
   margin: 15px;
 }
@@ -128,10 +142,15 @@ label.bold {
   font-weight: bold;
 }
 
+label.block {
+  display:block;
+}
+
 .reviewcontainer {
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 5px;
+  background-color: white;
 }
 
 .portrait {
@@ -169,6 +188,10 @@ button {
   box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2);
   transition: 0.5s;
   cursor: pointer;
+}
+
+button.large {
+  width:80%;
 }
 
 div.center {
@@ -218,13 +241,17 @@ button:hover {
   z-index: 9;
 }
 
+.form-popup-center {
+  left: 50%;
+  margin-left: -175px; /* Negative half of width. */
+}
+
 .form-container {
-  max-width: 550px;
+  max-width: 350px;
   padding: 10px;
   background-color: white;
   text-align: left;
 }
-
 
 .form-container input, textarea, select{
   font-family: Calibri, Calibri, Arial, Helvetica, sans-serif;
@@ -256,7 +283,7 @@ input[type=checkbox]:hover {
   transform: scale(1.1);
 }
 
-/* no shadow because of unremovable white square background*/
+/* no shadow because of unremovable white square background */
 input[type=radio]:hover {
   transform: scale(1.1);
 }
@@ -478,11 +505,18 @@ li a:hover:not(.active) {
 }
 
 .signup-form {
+  width: 100%;
   display: flex; 
   position: relative; 
   justify-content: center; 
   background-color: #e6e6fa;
-  box-shadow: 0 0px 3px 0 rgba(0,0,0,0.2);
+}
+
+.signup-container {
+  max-width: 650px;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 2%;
 }
 
 .flex-selection {
