@@ -360,6 +360,9 @@ textarea::placeholder {
   .grid-item-description {
     font-size: 5.0vw;
   }
+  .article30 h2 {
+    font-size: 14px;
+  }
 }
 
 .review {
@@ -524,4 +527,31 @@ li a:hover:not(.active) {
   justify-content:start; 
   gap:15px; 
   flex-wrap:wrap;
+}
+
+.article30 {
+  min-width: 150px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 30%;
+  border-radius: 5%;
+  background-color: white;
+  transition: 0.3s;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.article30 img {
+  border-radius: 5%;
+  width: 100%;
+}
+
+.article30:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.center-content {
+  text-align: center;
 }
