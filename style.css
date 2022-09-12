@@ -74,6 +74,13 @@ header {
   width: 100%;
   min-width: 150px;
   display: block;
+  transition: 0.5s;
+}
+
+.grid-2column-item img:hover {
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
+  filter: brightness(110%);
+  transform: scale(1.005);
 }
 
 .grid-container {
